@@ -1,0 +1,25 @@
+[Turing School Video: Cart Order Lifecycle] (https://vimeo.com/126190416)
+
+- 00:30 Add a button to prompt the create action
+- 01:11 wiring up the add button in the index view
+- 03:00 create a route for the capture pokemon action path (i.e., add to cart functionality)
+- 06:15 create a captures controller
+- 08:10  defining the create action to redirect root_path
+- 09:00 adding logic to the create action (when the captures button is hit in the page)
+- 11:30 passing through custom paths based on params
+- 14:20 adding pokemon to the cart via a sessions hash
+- 18:00 putting the session backpack hash into the view to see if the functionality is working properly
+- 19:40 getting the session hash into backpack
+- 21:41 the hash is getting erased each time the capture button is clicked; to fix it memoize the hash
+- 22:45 now the hash allows you to track all the pokemon captured, but doesn’t allow you to add beyond 1 because it’s hardcoded; to fix correct the memoize to start as an empty hash and memoize the starting value for each pokemon
+- 27:10 reviewing the logic of the problem above
+- 28:23 the controller is doing a lot of work that it shouldn’t be doing, especially the logic that involves adding values to the hash; creating an alternative to the current create action
+- 31:25 adding navbar to every single page through the applications controller
+- 37:20 create backpack class
+- 40:10 create add_pokemon method (i.e., add to cart functionality)
+- 45:57 refactoring backpack contents in application.html.erb to use count_all
+- 49:00 adding a flash message whenever a pokemon is captured, show species and number of species captured
+- 52:35 adding access to pluralize helper method
+- 52:39 adding flash notice functionality to the view
+- 58:00 add checkout cart functionality
+- 66:17 end
